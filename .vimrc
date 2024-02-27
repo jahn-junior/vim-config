@@ -23,7 +23,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'jiangmiao/auto-pairs', { 'for': 'c' }
-Plug 'dense-analysis/ale', { 'for': 'c' }
+Plug 'jiangmiao/auto-pairs', { 'for': ['c', 'javascript'] }
+Plug 'dense-analysis/ale', { 'for': ['c', 'javascript'] }
 
 call plug#end()
