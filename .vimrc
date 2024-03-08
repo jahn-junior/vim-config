@@ -8,6 +8,9 @@ set softtabstop=2
 set shiftwidth=2
 set nowrap
 
+set background=light
+colorscheme PaperColor
+
 let mapleader=','
 
 inoremap kk <esc>
@@ -21,6 +24,8 @@ set laststatus=2
 
 call plug#begin('~/.vim/plugged')
 
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs', { 'for': ['c', 'javascript'] }
