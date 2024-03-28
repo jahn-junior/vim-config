@@ -1,3 +1,4 @@
+syntax on
 filetype on
 filetype plugin on
 filetype indent on
@@ -27,8 +28,9 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter', { 'for': ['c,', 'javascript'] }
 Plug 'jiangmiao/auto-pairs', { 'for': ['c', 'javascript'] }
 Plug 'dense-analysis/ale', { 'for': ['c', 'javascript'] }
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
